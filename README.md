@@ -9,6 +9,7 @@ Bikeshare Data-Project
 ### Description
 Write a programm to explore the Data of a Bikeshare Company from the cities Chicago, New York City and Washington.
 Give some statistical information about the data.
+The statistics include information about the popular times of travel, the popular stations and trips, the trip durations and the user info.
 
 
 ### Files used
