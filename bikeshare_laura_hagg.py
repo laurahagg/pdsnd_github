@@ -2,7 +2,6 @@
 
 import time
 import pandas as pd
-import numpy as np
 
 CITY_DATA = { 'chicago': "C:/Users/laura/Desktop/Lau/Udacity/Python/all-project-files/chicago.csv",
               'new york city': "C:/Users/laura/Desktop/Lau/Udacity/Python/all-project-files/new_york_city.csv",
@@ -108,20 +107,20 @@ def time_stats(df):
     # display the most common month
     df["month"] = df["Start Time"].dt.month
     popular_month = df["month"].mode()[0]
-    print('Most Popular Month:', popular_month)
+    print('Most Popular Month: {}'.format(popular_month)
 
 
 
     # display the most common day of week
     df["day_of_week"] = df["Start Time"].dt.day_name()
     popular_day = df["day_of_week"].mode()[0]
-    print('Most Popular Day of the Week:', popular_day)
+    print('Most Popular Day of the Week: {}'. format(popular_day))
 
 
     # display the most common start hour
     df["hour"] = df["Start Time"].dt.hour
     popular_hour = df["hour"].mode()[0]
-    print('Most Popular Hour:', popular_hour)
+    print('Most Popular Hour: {}'.format(popular_hour))
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
